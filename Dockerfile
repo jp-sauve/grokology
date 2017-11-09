@@ -1,7 +1,7 @@
 FROM node:carbon
 
 # Create app directory
-WORKDIR /usr/src/app
+WORKDIR /usr/src/grokology
 
 # Install app dependencies
 COPY package.json .
@@ -15,5 +15,5 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-EXPOSE 8088
+EXPOSE 8080
 CMD [ "npm", "start" ]
