@@ -1,8 +1,12 @@
 {
     "name": "grokology",
     "version": "0.0.1",
-    "description": "new website",
+    "private": "true",
+    "description": "New Grokoloyg.ca website",
+    "author": "JP Sauve <jean-paul@grokology.ca>",
+    "main": "server.js",
     "scripts": {
+        "start": "node server.js",
         "babel": "babel --presets env src/app.js -o dist/bundle.js",
         "pack": "webpack",
         "watch": "npm run pack -- -d --watch",
@@ -14,6 +18,7 @@
         "babel-core": "^6.26.0",
         "babel-loader": "^7.1.2",
         "babel-preset-env": "^1.6.1",
+        "express": "^4.16.2",
         "webpack": "^3.8.1"
     }
 }
