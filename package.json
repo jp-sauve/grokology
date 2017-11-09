@@ -1,0 +1,19 @@
+{
+    "name": "grokology",
+    "version": "0.0.1",
+    "description": "new website",
+    "scripts": {
+        "babel": "babel --presets env src/app.js -o dist/bundle.js",
+        "pack": "webpack",
+        "watch": "npm run pack -- -d --watch",
+        "test": "mocha"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "babel-preset-env": "^1.6.1",
+        "webpack": "^3.8.1"
+    }
+}

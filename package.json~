@@ -1,0 +1,13 @@
+{
+    "name": "Project Name",
+    "version": "0.0.1",
+    "description": "Change Project description",
+    "scripts": {
+        "babel": "babel --presets es2015 src/app.js -o dist/bundle.js",
+        "start": "npm run webpack",
+        "webpack": "webpack -d --watch"
+    },
+    "license": "MIT",
+    "dependencies": {
+    }
+}
